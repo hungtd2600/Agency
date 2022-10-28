@@ -1,0 +1,55 @@
+body {
+  line-height: 1;
+  font-family: $font;
+  color: $text-color;
+  font-weight: 400;
+  background-color: #fdfcfc;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 31px;
+  border-radius: 100rem;
+  font-family: $font;
+  line-height: calc(27.5 / 16);
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  &--primary {
+    font-weight: 600;
+    background-color: $primary-color;
+    color: white;
+  }
+  &--outline {
+    background-color: transparent;
+    color: $primary-color;
+    font-weight: 500;
+    border: 1px solid;
+  }
+  &--rounded {
+    border-radius: 10px;
+    padding: 10px 31px;
+  }
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1065px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 1px) and (max-width: 428px) {
+  .container {
+    max-width: 380px;
+    margin: 0 auto;
+    margin: 0 24px;
+  }
+}

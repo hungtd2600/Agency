@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 50px;
+  list-style-type: none;
+  &-item{
+    a {
+      color: $text-color;
+    }
+  }
+}
